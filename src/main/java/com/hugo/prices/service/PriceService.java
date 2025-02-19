@@ -18,7 +18,12 @@ public class PriceService {
     public PriceService(PriceRepository priceRepository) {
         this.priceRepository = priceRepository;
     }
-
+    
+    /**
+     * Retorna la tarifa aplicable para el producto y marca en la fecha indicada,
+     * en caso de existir varios productos que lo complan se selecciona la de mayor prioridad
+     *  o lanzando una excepción si no existe ninguno.
+     */
     public PriceResponse getApplicablePrice(LocalDateTime applicationDate, Long productId, Long brandId) {
         return priceRepository.findApplicablePrices(brandId, productId, applicationDate)
                 .stream()

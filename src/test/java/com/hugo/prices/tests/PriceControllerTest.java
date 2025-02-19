@@ -46,7 +46,7 @@ public class PriceControllerTest {
             .body("price", equalTo(35.50f));
     }
 
-    /**
+    /** 
      * Test 2: Petición a las 16:00 del día 14 para producto 35455 y brand 1 (ZARA).
      * Se espera PRICE_LIST = 2, PRICE = 25.45 (ya que a esa hora coinciden dos tarifas y se selecciona la de mayor prioridad).
      */
