@@ -1,0 +1,7 @@
+com\hugo\prices\service\PriceService.class
+com\hugo\prices\controller\PriceController.class
+com\hugo\prices\error\PriceNotFoundException.class
+com\hugo\prices\respository\PriceRepository.class
+com\hugo\prices\entity\Price.class
+com\hugo\prices\domain\PriceResponse.class
+com\hugo\prices\PriceApplication.class
